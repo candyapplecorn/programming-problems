@@ -1,0 +1,17 @@
+{
+  "name": "programming-problems",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/jest/bin/jest.js"
+  },
+  "keywords": [
+    "exercises"
+  ],
+  "author": "Joseph Burger",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^24.8.0"
+  }
+}
