@@ -1,3 +1,22 @@
+/* ======================================================
+The classic game of Set revolves around finding patterned
+matches of three cards from among a set of 12. Each card
+has four characteristics with three variants.
+
+    3 variants ^ 4 characteristics = 81 card combinations.
+
+These characteristics and variants are often:
+    color: red, blue or green
+    shape: triangle, circle or squiggle
+    count: one, two or three
+    fill: empty, lined or solid
+
+For more details on Set, see Wikipedia:
+    https://en.wikipedia.org/wiki/Set_(card_game)
+
+Here's a website which offers a playable Set game:
+    http://smart-games.org/en/set/start
+ ====================================================== */
 const { Card, Deck } = require('../lib/set');
 const { ATTRIBUTES } = require('../lib/constants/set');
 
