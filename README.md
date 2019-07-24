@@ -27,7 +27,7 @@ The `--watch` flag tells the test runner (_Jest_) to re-run its tests whenever f
 
 ## Answers
 
-There's a branch called **answers** which has solutions for each problem. On that branch `npm run test` should pass all tests. To see that branch, simply check it out:
+There's a branch called [answers](https://github.com/candyapplecorn/programming-problems/tree/answers) which has solutions for each problem. On that branch `npm run test` should pass all tests. To see that branch, simply check it out:
 
 ```
 git checkout answers && \
