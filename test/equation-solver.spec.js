@@ -17,7 +17,9 @@ describe('Equation Solver', () => {
             ['More subtraction', "10 - 1 - 3", 6],
             ['Subtraction and addition', "100 + 100 - 100", 100],
         ])('%s\t%s = %d', (stmt, input, output) => {
-            expect(equationSolver(input)).toEqual(output);
+            it('should calculate correctly', async () => {
+                expect(equationSolver(input)).toEqual(output);
+            });
         });
     });
 });
