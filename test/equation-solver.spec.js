@@ -20,9 +20,15 @@ describe('Equation Solver', () => {
             ['More multiplication', "2 * 2 * 5", 20],
             ['Division', "2 / 2", 1],
             ['More division', "10 / 4 / 0.5", 5],
+            ['Order of operations', "10 + 2 * 1", 12],
+            ['Order of operations', "1 * 10 + 2", 12],
+            ['Order of operations', "1 + 10 * 2", 21],
+            ['Order of operations', "1 + 10 * 2 / 3 + 4", 10 + 5/3],
         ])('%s\t%s = %d', (stmt, input, output) => {
             it('should calculate correctly', async () => {
-                expect(equationSolver(input)).toEqual(output);
+                const actual = Number(equationSolver(input)).toPrecision(3);
+                const expected = Number(output).toPrecision(3);
+                expect(actual).toEqual(expected);
             });
         });
     });
